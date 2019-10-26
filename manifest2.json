@@ -1,0 +1,43 @@
+{
+  "name": "Brookhouser's Close all other tabs",
+  "description": "Close all other tabs",
+  "version": "2.2",
+  "permissions": ["contextMenus"],
+  "background": {
+    "scripts": ["sample.js"]
+  },
+  "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "Brookhouser's Close all other tabs"
+    },
+  "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Alt+B"
+            }
+        },
+        "toggle-feature": {
+          "suggested_key": {
+            "default": "Alt+W"
+          },
+          "description": "Create a new tab"
+        },
+        "toggle-feature-foo": {
+          "suggested_key": {
+            "default": "Alt+P"
+          },
+          "description": "Create 20 new windows to troll Donnie"
+        },
+        "toggle-feature-foo-undo": {
+          "suggested_key": {
+            "default": "Alt+Shift+W"
+          },
+          "description": "Close all other windows"
+        }
+    },
+  "icons": {
+    "16": "icon.png",
+    "128": "icon.png"
+  },
+  "manifest_version": 2
+}
